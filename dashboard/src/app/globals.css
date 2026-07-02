@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+/* 1. Tailwind v4 selector-based dark mode configuration */
+@variant dark (.dark &);
+
+@theme inline {
+  --font-sans: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  --font-mono: var(--font-geist-mono), monospace;
+}
+
+/* 2. Custom scrollbars for premium Looker/Stripe theme feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Base resets */
+body {
+  font-family: var(--font-sans);
+}
+
+/* 3. Dedicated Print Media Styles for High-Quality PDF Exports */
+@media print {
+  html, body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  /* Hide navigation, sidebar filters, button actions, inputs, and toggle switches */
+  header, 
+  aside, 
+  button, 
+  select, 
+  input, 
+  .print\:hidden,
+  [role="tablist"],
+  .sticky {
+    display: none !important;
+  }
+
+  /* Expand main container to full screen */
+  main {
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Reset grid columns to single column or dual page layout to avoid clipping */
+  .grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+  }
+
+  /* Ensure card containers do not split mid-render across pages */
+  .rounded-2xl {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+    border: 1px solid #cbd5e1 !important;
+    box-shadow: none !important;
+    background: #ffffff !important;
+    padding: 1.5rem !important;
+    margin-bottom: 2rem !important;
+  }
+
+  /* Hard-override specific chart heights to preserve layout ratios */
+  .h-\[300px\], 
+  .h-\[320px\], 
+  .h-\[280px\],
+  .h-\[230px\] {
+    height: 250px !important;
+  }
+
+  /* Re-color text to maximum print-contrast */
+  h2, h3, h4, span, p, td, th {
+    color: #000000 !important;
+  }
+
+  /* Force Recharts and charts to print backgrounds */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}
