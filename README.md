@@ -167,7 +167,7 @@ Performed:
 
 ### Dashboard
 
-![](dashboard/images/Data Preprocesing.png)
+![](dashboard/images/Data_Processing.png)
 
 ---
 
@@ -183,7 +183,7 @@ The EDA dashboard provides insights into:
 
 ### Dashboard
 
-![](dashboard/images/about.png)
+![](dashboard/images/exe-1.png)
 
 ---
 
