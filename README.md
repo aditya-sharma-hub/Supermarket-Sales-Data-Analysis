@@ -167,7 +167,7 @@ Performed:
 
 ### Dashboard
 
-![](dashboard/images/Data_Processing.png)
+![](dashboard/images/Data_Preprocessing.png)
 
 ---
 
