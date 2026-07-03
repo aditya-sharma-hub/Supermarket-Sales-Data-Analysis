@@ -200,7 +200,7 @@ The BI dashboard summarizes the most important KPIs including:
 
 ### Dashboard
 
-![](dashboard/images/businesss insight.png)
+![](dashboard/images/Businesss_Insight.png)
 
 ---
 
@@ -217,7 +217,7 @@ The dashboard highlights:
 
 ### Dashboard
 
-![](dashboard/images/Anomaly detection.png)
+![](dashboard/images/Anomaly_Detection.png)
 
 ---
 
@@ -234,7 +234,7 @@ Performed:
 
 ### Dashboard
 
-![](dashboard/images/statistical analysis.png)
+![](dashboard/images/statistical_analysis.png)
 
 ---
 
@@ -273,7 +273,7 @@ Features include:
 
 ### Dashboard
 
-![](dashboard/images/Sales Forecasting.png)
+![](dashboard/images/Sales_Forecasting.png)
 
 ---
 
