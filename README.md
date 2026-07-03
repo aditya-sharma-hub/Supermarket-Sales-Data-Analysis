@@ -217,7 +217,7 @@ The dashboard highlights:
 
 ### Dashboard
 
-![](dashboard/images/Anomaly_Detection.png)
+![](dashboard/images/Anomaly_detection.png)
 
 ---
 
@@ -336,6 +336,8 @@ Features include:
 - Professional Dashboard UI
 - Clean Repository Structure
 
+![](dashboard/images/about.png)
+
 ---
 
 # 🚀 Future Improvements
@@ -346,7 +348,7 @@ Features include:
 - Real-time Dashboard
 - Cloud Deployment
 - Power BI Integration
-- Streamlit Version
+
 
 ---
 
